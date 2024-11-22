@@ -1,0 +1,14 @@
+{% extends "_base.html" %}
+{% block title %}Confirm Email{% endblock title %}
+{% block content %}
+
+<h1>Email Confirmation</h1>
+<p>Thank you for signing up! Please confirm your email address by clicking the button below:</p>
+{% comment %} <button type="submit" class="btn btn-primary">Confirm</button> {% endcomment %}
+<form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Confirm</button>
+    </form>
+</p>
+
+{% endblock content %}

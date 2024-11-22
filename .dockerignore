@@ -1,0 +1,6 @@
+.venv
+.gitignore
+.env.dev
+.env.prod
+docker-compose.dev.yml
+docker-compose.dev.prod
